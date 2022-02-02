@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 6%;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  transition: 0.4s;
+  color: #d0d0d0;
+}
+
+.menu-item {
+  border-radius: 5px;
+}
