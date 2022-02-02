@@ -1,0 +1,92 @@
+#container-home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 4vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-home h1 {
+  color: #eeeeee;
+}
+
+#container-home h4 {
+  color: #eeeeee;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-area {
+  width: 38vw;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  animation: upArea 2s;
+}
+
+@keyframes upArea {
+  from {
+    transform: translateY(90px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.input-area div {
+  background: rgb(255, 255, 255, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+}
+
+.input-area button {
+  width: 100%;
+  height: 6vh;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #13393a;
+  transition: transform 0.3s;
+}
+
+.input-area button:hover {
+  transform: scale(1.05);
+}
+
+.input-area svg {
+  margin: 0 5px;
+}
+
+.input-area input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+  color: #eeeeee;
+  background: transparent;
+  font-size: 14px;
+}
+
+.input-area input::placeholder {
+  color: #d0d0d0;
+}
+
+@media (max-width: 767px) {
+  .input-area {
+    width: 60vw;
+  }
+  .logo img {
+    width: 20vw;
+  }
+}

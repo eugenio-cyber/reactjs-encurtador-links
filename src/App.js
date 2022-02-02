@@ -2,7 +2,7 @@ import RoutesApp from "./routes";
 
 export default function App() {
   return (
-    <div className="app">
+    <div>
       <RoutesApp />
     </div>
   );

@@ -9,19 +9,6 @@ body {
   background: #13393a;
 }
 
-h1 {
-  color: #eeeeee;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 button {
   cursor: pointer;
 }
