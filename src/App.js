@@ -1,9 +1,9 @@
-function App() {
+import RoutesApp from "./routes";
+
+export default function App() {
   return (
     <div className="app">
-      <h1>Meu Link</h1>
+      <RoutesApp />
     </div>
   );
 }
-
-export default App;
