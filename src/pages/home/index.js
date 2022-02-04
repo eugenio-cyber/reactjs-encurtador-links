@@ -1,16 +1,32 @@
 import React, { useState } from "react";
 import { FiLink } from "react-icons/fi";
+
 import Menu from "../../components/Menu";
 import Modal from "../../components/Modal";
+
 import "./home.css";
+
+import Api from "../../services/api";
 
 export default function Home() {
   const [link, setLink] = useState();
   const [modal, setModal] = useState(false);
+  const [data, setData] = useState();
 
-  const showLink = () => {
-    setModal(true);
-  };
+  async function showLink() {
+    try {
+      const responsive = await Api.post("/shorten", {
+        long_url: link,
+      });
+
+      setData(responsive.data);
+      setModal(true);
+      setLink("");
+    } catch {
+      alert("Algo deu errado");
+      setLink("");
+    }
+  }
 
   return (
     <div id="container-home">
@@ -41,6 +57,7 @@ export default function Home() {
           close={() => {
             setModal(false);
           }}
+          content={data}
         />
       )}
     </div>
