@@ -12,7 +12,7 @@ import Modal from "../../components/Modal";
 import "./home.css";
 
 export default function Home() {
-  const [link, setLink] = useState();
+  const [link, setLink] = useState("");
   const [modal, setModal] = useState(false);
   const [data, setData] = useState();
 
