@@ -9,6 +9,12 @@
   animation: upArea 1.2s;
 }
 
+.modal-container span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @keyframes upArea {
   from {
     transform: translateY(90px);

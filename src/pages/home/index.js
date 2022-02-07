@@ -1,12 +1,15 @@
+// bibliotecas
 import React, { useState } from "react";
 import { FiLink } from "react-icons/fi";
 
+// servicos
+import Api from "../../services/api";
+import { putLink } from "../../services/storage";
+
+// componentes e estilo
 import Menu from "../../components/Menu";
 import Modal from "../../components/Modal";
-
 import "./home.css";
-
-import Api from "../../services/api";
 
 export default function Home() {
   const [link, setLink] = useState();
@@ -21,6 +24,7 @@ export default function Home() {
 
       setData(responsive.data);
       setModal(true);
+      putLink("encurtaLink", responsive.data);
       setLink("");
     } catch {
       alert("Algo deu errado");

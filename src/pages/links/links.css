@@ -55,6 +55,20 @@
   background: transparent;
 }
 
+#modal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.empty-list h2 {
+  margin-top: 20px;
+  width: 100%;
+  color: #eeeeee;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .item-links {
     width: 94vw;
