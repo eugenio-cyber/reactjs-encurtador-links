@@ -9,6 +9,7 @@ import { putLink } from "../../services/storage";
 // componentes e estilo
 import Menu from "../../components/Menu";
 import Modal from "../../components/Modal";
+import Logo from "../../img/logo.png";
 import "./home.css";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
   return (
     <div id="container-home">
       <div className="logo">
-        <img src="/logo.png" alt="Logo do encurtador de links" />
+        <img src={Logo} alt="Logo do encurtador de links" />
         <h1>Meu Link</h1>
         <h4>Para encurtar seu link cole abaixo 👇</h4>
       </div>
