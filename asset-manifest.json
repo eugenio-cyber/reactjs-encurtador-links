@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/encurtador_links/static/css/main.a557f34a.css",
+    "main.js": "/encurtador_links/static/js/main.91393ec2.js",
+    "index.html": "/encurtador_links/index.html",
+    "main.a557f34a.css.map": "/encurtador_links/static/css/main.a557f34a.css.map",
+    "main.91393ec2.js.map": "/encurtador_links/static/js/main.91393ec2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a557f34a.css",
+    "static/js/main.91393ec2.js"
+  ]
+}
