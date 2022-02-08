@@ -14,8 +14,7 @@ export async function putLink(key, newLink) {
   const hasLink = linksSave.some((link) => link.id === newLink.id);
 
   if (hasLink) {
-    alert("O link já estava salvo");
-    return;
+    return "O link já estava salvo";
   }
 
   linksSave.push(newLink);

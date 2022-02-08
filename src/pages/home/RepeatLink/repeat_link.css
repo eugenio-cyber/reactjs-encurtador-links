@@ -1,0 +1,40 @@
+.modal-countainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgb(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #eeeeee;
+  width: 300px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal span {
+  font-size: 18px;
+  color: #13393a;
+}
+
+.modal-repeat-header {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.modal-repeat-header button {
+  margin: 2px;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+}

@@ -1,4 +1,7 @@
+// bibliotecas
 import { FiX, FiClipboard } from "react-icons/fi";
+
+// estilos
 import "./modal.css";
 
 export default function Modal({ close, content }) {

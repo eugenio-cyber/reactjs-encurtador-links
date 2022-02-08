@@ -9,12 +9,15 @@ import { putLink } from "../../services/storage";
 // componentes e estilo
 import Menu from "../../components/Menu";
 import Modal from "../../components/Modal";
-import Logo from "../../img/logo.png";
+import Logo from "../../assets/img/logo.png";
+import ModalRepeat from "./RepeatLink";
 import "./home.css";
 
 export default function Home() {
   const [link, setLink] = useState("");
-  const [modal, setModal] = useState(false);
+  const [textModal, setTextModal] = useState("");
+  const [modalLink, setModalLink] = useState(false);
+  const [modalRepeat, setModalRepeat] = useState(false);
   const [data, setData] = useState();
 
   async function showLink() {
@@ -24,11 +27,12 @@ export default function Home() {
       });
 
       setData(responsive.data);
-      setModal(true);
+      setModalLink(true);
       putLink("encurtaLink", responsive.data);
       setLink("");
     } catch {
-      alert("Algo deu errado");
+      setModalRepeat(true);
+      setTextModal("O link digitado não é compatível");
       setLink("");
     }
   }
@@ -57,12 +61,21 @@ export default function Home() {
 
       <Menu />
 
-      {modal && (
+      {modalLink && (
         <Modal
           close={() => {
-            setModal(false);
+            setModalLink(false);
           }}
           content={data}
+        />
+      )}
+
+      {modalRepeat && (
+        <ModalRepeat
+          close={() => {
+            setModalRepeat(false);
+          }}
+          text={textModal}
         />
       )}
     </div>
