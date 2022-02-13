@@ -7,7 +7,7 @@ export async function getLinks(key) {
   return saveLinks;
 }
 
-// funcao que adiiona um link
+// funcao que adiciona um link
 export async function putLink(key, newLink) {
   let linksSave = await getLinks(key);
 
