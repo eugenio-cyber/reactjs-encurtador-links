@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/encurtador_links/static/css/main.1a98b72a.css",
-    "main.js": "/encurtador_links/static/js/main.6664622c.js",
-    "static/media/notfound.png": "/encurtador_links/static/media/notfound.e6feeaefb86e8a38c67a.png",
-    "index.html": "/encurtador_links/index.html",
-    "main.1a98b72a.css.map": "/encurtador_links/static/css/main.1a98b72a.css.map",
-    "main.6664622c.js.map": "/encurtador_links/static/js/main.6664622c.js.map"
+    "main.css": "/reactjs-api-encurtador-links/static/css/main.1a98b72a.css",
+    "main.js": "/reactjs-api-encurtador-links/static/js/main.9b32506b.js",
+    "static/media/notfound.png": "/reactjs-api-encurtador-links/static/media/notfound.e6feeaefb86e8a38c67a.png",
+    "index.html": "/reactjs-api-encurtador-links/index.html",
+    "main.1a98b72a.css.map": "/reactjs-api-encurtador-links/static/css/main.1a98b72a.css.map",
+    "main.9b32506b.js.map": "/reactjs-api-encurtador-links/static/js/main.9b32506b.js.map"
   },
   "entrypoints": [
     "static/css/main.1a98b72a.css",
-    "static/js/main.6664622c.js"
+    "static/js/main.9b32506b.js"
   ]
 }
