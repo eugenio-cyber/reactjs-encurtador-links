@@ -10,7 +10,7 @@
 
 ## 🔗 Quer acessar o projeto?
 
-[Clique aqui para ver](https://eugenio-cyber.github.io/reactjs-api-encurtador-links)
+[Clique aqui para ver](https://eugenio-cyber.github.io/reactjs-api-encurtador-links/)
 
 ## 🏹 Qual o objetivo do projeto?
 
