@@ -1,8 +1,8 @@
 {
-  "name": "meulink",
+  "name": "reactjs-encurtador-links",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eugenio-cyber.github.io/reactjs-api-encurtador-links",
+  "homepage": "https://eugenio-cyber.github.io/reactjs-encurtador-links/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
