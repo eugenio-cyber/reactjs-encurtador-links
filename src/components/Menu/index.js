@@ -1,18 +1,26 @@
-import { BsYoutube, BsInstagram } from "react-icons/bs";
+import { BsYoutube, BsGithub } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./menu.css";
 
 export default function Menu() {
   return (
-    <div className="menu">
-      <a href="https://bit.ly/3HM3AaT" className="social">
-        <BsYoutube color="#eeeeee" size={28} />
+    <div className='menu'>
+      <a
+        href='https://www.youtube.com/channel/UCM_B05YSytgVGxFPz5mkG2A/videos'
+        className='social'
+        target='blank'
+      >
+        <BsYoutube color='#eeeeee' size={28} />
       </a>
-      <a href="https://www.instagram.com/wesley.eugenio_18/" className="social">
-        <BsInstagram color="#eeeeee" size={20} />
+      <a
+        href='https://github.com/eugenio-cyber'
+        className='social'
+        target='blank'
+      >
+        <BsGithub color='#eeeeee' size={24} />
       </a>
 
-      <Link className="menu-item" to="/links">
+      <Link className='menu-item' to='/links'>
         Meus Links
       </Link>
     </div>

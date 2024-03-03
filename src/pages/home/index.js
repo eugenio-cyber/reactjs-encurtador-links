@@ -1,12 +1,9 @@
-// bibliotecas
 import React, { useState } from "react";
 import { FiLink } from "react-icons/fi";
 
-// servicos
 import Api from "../../services/api";
 import { putLink } from "../../services/storage";
 
-// componentes e estilo
 import Menu from "../../components/Menu";
 import Modal from "../../components/Modal";
 import Logo from "../../assets/img/logo.png";

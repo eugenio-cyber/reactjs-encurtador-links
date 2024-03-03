@@ -1,4 +1,3 @@
-// funcao para buscar os links
 export async function getLinks(key) {
   const myLinks = await localStorage.getItem(key);
 
@@ -7,7 +6,6 @@ export async function getLinks(key) {
   return saveLinks;
 }
 
-// funcao que adiciona um link
 export async function putLink(key, newLink) {
   let linksSave = await getLinks(key);
 
@@ -22,7 +20,6 @@ export async function putLink(key, newLink) {
   await localStorage.setItem(key, JSON.stringify(linksSave));
 }
 
-// funcao para deletar um link
 export function deleteLinks(links, id) {
   let myLinks = links.filter((item) => {
     return item.id !== id;
